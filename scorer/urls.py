@@ -12,11 +12,11 @@
 # ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 # OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-from django.conf.urls import patterns, url
+from django.conf.urls import url
 
 from scorer import views
 
-urlpatterns = patterns('',
+urlpatterns = ['',
     url(r'^bigscreen/$', views.big_screen),
     url(r'^podium/$', views.podium),
     url(r'^rank/$', views.rank),
@@ -25,4 +25,4 @@ urlpatterns = patterns('',
     url(r'^controls/$', views.controls),
     url(r'^exportcsv/$', views.export_csv),
     url(r'^top3/$', views.top3)
-)
+              ]
